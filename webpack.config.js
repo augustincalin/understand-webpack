@@ -6,6 +6,12 @@ module.exports = {
         path: "dist",
         filename: "bundle.js"
     },
+    module:{
+        loaders: [
+            {test:/\.css$/, loader:'style!css'},
+            {test:/\.png$/, loader:'file'}
+        ]
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: 'src/index.html'
