@@ -7,6 +7,7 @@ This is a short tutorial about Webpack. It is organized in branches so you have 
 
 For all the branches the folder structure is the same:
 ```
+\
 │   package.json
 ├───dist
 └───src
