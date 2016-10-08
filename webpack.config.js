@@ -11,8 +11,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")  },
-            { test: /\.png$/, loader: 'file' },
-            { test: /\.jpg$/, loader: 'file?name=[path][name].[ext]' }
+            { test: /\.png$/, loader: 'file' }
         ]
     },
     plugins: [
