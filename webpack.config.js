@@ -10,8 +10,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.css$/, loader: 'style!css' },
-            { test: /\.png$/, loader: 'file' },
-            { test: /\.jpg$/, loader: 'file?name=[path][name].[ext]' }
+            { test: /\.png$/, loader: 'file' }
         ]
     },
     plugins: [
