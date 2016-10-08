@@ -24,4 +24,4 @@ Now, our CSS file references a picture: ```background: url('../images/background
 If you reload the dist/index.html in your browser you will notice that the styles are applied (including the background) but the picture of Frankfurt is still missing.
 
 
-__In the next episode we will see how to include pictures__
+_In the next episode we will see how to include pictures_
