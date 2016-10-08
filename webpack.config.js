@@ -1,5 +1,6 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var  CopyWebpackPlugin  =  require('copy-webpack-plugin');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: "./src/app/main.js",
@@ -9,7 +10,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.css$/, loader: 'style!css' },
+            { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")  },
             { test: /\.png$/, loader: 'file' },
             { test: /\.jpg$/, loader: 'file?name=[path][name].[ext]' }
         ]
@@ -25,7 +26,8 @@ module.exports = {
                     to: 'assets/images/frankfurt.jpg'
                 }
             ]
-        )
+        ),
+        new ExtractTextPlugin("styles.css")
     ]
 
 };
