@@ -50,6 +50,8 @@ file-loader | emits a file in the output folder
 url-loader | can embed the file into the bundle as a base-64 encoded string if the size is smaller than the one specified as a parameter. If the size is bigger then file-loader is used
 **CopyWebpackPlugin** | copies the files as they are
 css-loader | "knows" to add css files to bundle
-style-loader | adds <style> to the html page
+style-loader | adds style tag to the html page
+
+
 
 _In the next episode we will see how to add webpack_
