@@ -6,14 +6,12 @@ _Checkout branches to see the progress_
 
 The first step is to create a bundle.
 
-Run ```npm install```
-
-This will install webpack and html-webpack-plugin.
+Run ```npm install```. This will install webpack and html-webpack-plugin.
 
 ####webpack.config.js
-It's the webpack configuration.
+This file configures webpack.
 
-**entry** is the entry file. Webpack will start from here and follows all ```require```, ```url(...)``` to find all the refered files and build the bundle.
+**entry** is the starting point. Webpack will start from here and follows all ```require```, ```url(...)``` (btw, webpack knows AMD format as well) to find all the refered files and build the bundle.
 
 **output.path** is the path where the built application will be saved.
 
@@ -22,10 +20,10 @@ It's the webpack configuration.
 **HtmlWebpackPlugin** If you have a look at index.html you will see the ```<script src="app/main.js"></script>``` is removed. That's because this plugin will inject it for us. Actually the plugin will emit a new file for us in dist folder based on the ```template```.
 
 ####index.html
-The ```<script src="app/main.js"></script>``` is removed. Also now the button is not calling directly the function from main.js. Instead the main.js is assigning onclick of that button.
+The ```<script src="app/main.js"></script>``` is removed. Another change we made is that the button is not calling anymore directly the function from ```main.js```. Instead the ```main.js``` is assigning ```onclick``` of that button.
 
 ####main.js
-As stated above now the main.js is assigning the onclick event handler to the ```reserveButton```.
+As stated above now the main.js is assigning the ```onclick``` event handler to the ```reserveButton``` element.
 
 Run ```webpack```. In your dist folder two files are generated: the ```bundle.js``` and ```index.html```.
 
