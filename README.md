@@ -43,9 +43,13 @@ Some pictures are just copied over from src to dist.
 CSS styles are extracted from the bundle and webpack-dev-server is added.
 
 ###List of useful loaders and plugins
-Loader/**Plugin** | Purpose
+Loader / **Plugin** | Purpose
 ---|---
 **ExtractTextPlugin** | for extracting text from the bundle
 file-loader | emits a file in the output folder
 url-loader | can embed the file into the bundle as a base-64 encoded string if the size is smaller than the one specified as a parameter. If the size is bigger then file-loader is used
 **CopyWebpackPlugin** | copies the files as they are
+css-loader | "knows" to add css files to bundle
+style-loader | adds <style> to the html page
+
+_In the next episode we will see how to add webpack_
