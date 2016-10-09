@@ -20,7 +20,7 @@ This file configures webpack.
 **HtmlWebpackPlugin** If you have a look at index.html you will see the ```<script src="app/main.js"></script>``` is removed. That's because this plugin will inject it for us. Actually the plugin will emit a new file for us in dist folder based on the ```template```.
 
 ####index.html
-The ```<script src="app/main.js"></script>``` is removed. Another change we made is that the button is not calling anymore directly the function from ```main.js```. Instead the ```main.js``` is assigning ```onclick``` of that button.
+The ```<script src="app/main.js"></script>``` is removed. A change we made is that the button is not calling anymore directly the function from ```main.js```. Instead the ```main.js``` is assigning ```onclick``` of that button.
 
 ####main.js
 As stated above now the main.js is assigning the ```onclick``` event handler to the ```reserveButton``` element.
